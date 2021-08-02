@@ -1,26 +1,20 @@
-import React, { Component } from 'react';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-4 col-md-6 col-lg-4">
-              <div style={{ backgroundColor: 'red' }}>Cloumn1</div>
-            </div>
-            <div className="col-sm-4 col-md-6 col-lg-4">
-              <div style={{ backgroundColor: 'blue' }}>Cloumn2</div>
-            </div>
-            <div className="col-sm-4 col-md-6 col-lg-4">
-              <div style={{ backgroundColor: 'green' }}>Cloumn3</div>
-            </div>
-          </div>
-        </div>
+import LandingContent from './components/Landing';
+
+function Landing() {
+  return (
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <LandingContent />
+          </Route>
+        </Switch>
       </div>
-    );
-  }
+    </Router>
+  );
 }
 
-export default App;
+export default Landing;

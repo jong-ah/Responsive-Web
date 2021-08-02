@@ -1,0 +1,10 @@
+.container {
+  color: black;
+
+  @include responsive(T) {
+    color: red;
+  }
+  @include responsive(D) {
+    color: white;
+  }
+}
