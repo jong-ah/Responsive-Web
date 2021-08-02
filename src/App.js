@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import LandingContent from './components/Landing';
 
-function Landing() {
+function App() {
   return (
     <Router>
       <div>
@@ -17,4 +17,4 @@ function Landing() {
   );
 }
 
-export default Landing;
+export default App;

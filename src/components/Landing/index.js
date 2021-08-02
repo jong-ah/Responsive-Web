@@ -1,6 +1,7 @@
 import React from 'react';
 
 function LandingContent() {
+  console.log(process.env.REACT_APP_API_URL);
   return (
     <>
       <div className="container">
